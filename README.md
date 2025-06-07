@@ -1,6 +1,15 @@
 # Aspectos
 Tarea 1(Grupo 5)
 
+# Cambios de botón de color (Pablo Chacón)
+![color_negro](image.png)
+![color_amarillo](image-1.png)
+![color_naranja](image-2.png)
+
+# Funcionalidad Adicional: Ventana Iniciada
+Se implemento una función en el mensaje de consolo cuando la ventana ha iniciado. El mensaje indicia que el problema está funcionando correctamente y el usuario tiene acceso a interactuar con el problema. Se imprimio en la consola la frase "Ventana iniciada. Listo para cambiar colores.".
+
+
 
 ## Funcionalidad Adicional: Sonido
 

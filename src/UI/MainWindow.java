@@ -18,28 +18,30 @@ public class MainWindow extends JFrame implements Observer {
 	        setSize(400, 200);
 	        setLayout(new FlowLayout());
 
-	        JButton redBtn = new JButton("Rojo");
-			redBtn.addActionListener(e -> {
-				subject.setColor(java.awt.Color.RED);
+	        JButton blackBtn = new JButton("Negro");
+			blackBtn.addActionListener(e -> {
+				subject.setColor(java.awt.Color.BLACK);
 				subject.notifyAllObservers();
 			});
 			
-			JButton greenBtn = new JButton("Verde");
-			greenBtn.addActionListener(e -> {
-				subject.setColor(java.awt.Color.GREEN);
+			JButton yellowBtn = new JButton("Amarillo");
+			yellowBtn.addActionListener(e -> {
+				subject.setColor(java.awt.Color.YELLOW);
 				subject.notifyAllObservers();
 			});
 			
-			JButton blueBtn = new JButton("Azul");
-			blueBtn.addActionListener(e -> {
-				subject.setColor(java.awt.Color.BLUE);
+			JButton orangeBtn = new JButton("Naranja");
+			orangeBtn.addActionListener(e -> {
+				subject.setColor(java.awt.Color.ORANGE);
 				subject.notifyAllObservers();
 			});
 
 
-	        add(redBtn);
-	        add(greenBtn);
-	        add(blueBtn);
+	        add(blackBtn);
+	        add(yellowBtn);
+	        add(orangeBtn);
+
+			System.out.println("Ventana iniciada. Listo para cambiar colores y escoga el que este disponible.");
 
 	        setVisible(true);
 	    }
@@ -50,7 +52,7 @@ public class MainWindow extends JFrame implements Observer {
 	    }
 
 	    public static void main(String[] args) {
-	        new MainWindow(new Color());
+			new MainWindow(new Color());
 	    }
 	
 	
