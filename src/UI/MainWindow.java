@@ -19,16 +19,23 @@ public class MainWindow extends JFrame implements Observer {
 	        setLayout(new FlowLayout());
 
 	        JButton redBtn = new JButton("Rojo");
-	        redBtn.addActionListener(e -> subject.setColor(java.awt.Color.RED));
-			subject.notifyAllObservers(); 
+			redBtn.addActionListener(e -> {
+				subject.setColor(java.awt.Color.RED);
+				subject.notifyAllObservers();
+			});
+			
+			JButton greenBtn = new JButton("Verde");
+			greenBtn.addActionListener(e -> {
+				subject.setColor(java.awt.Color.GREEN);
+				subject.notifyAllObservers();
+			});
+			
+			JButton blueBtn = new JButton("Azul");
+			blueBtn.addActionListener(e -> {
+				subject.setColor(java.awt.Color.BLUE);
+				subject.notifyAllObservers();
+			});
 
-	        JButton greenBtn = new JButton("Verde");
-	        greenBtn.addActionListener(e -> subject.setColor(java.awt.Color.GREEN));
-			subject.notifyAllObservers();
-
-	        JButton blueBtn = new JButton("Azul");
-	        blueBtn.addActionListener(e -> subject.setColor(java.awt.Color.BLUE));
-			subject.notifyAllObservers();
 
 	        add(redBtn);
 	        add(greenBtn);
