@@ -18,9 +18,9 @@ public class MainWindow extends JFrame implements Observer {
 	        setSize(400, 200);
 	        setLayout(new FlowLayout());
 
-	        JButton blackBtn = new JButton("Negro");
+	        JButton blackBtn = new JButton("Rosado");
 			blackBtn.addActionListener(e -> {
-				subject.setColor(java.awt.Color.BLACK);
+				subject.setColor(java.awt.Color.PINK);
 				subject.notifyAllObservers();
 			});
 			
