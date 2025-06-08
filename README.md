@@ -2,9 +2,7 @@
 Tarea 1(Grupo 5)
 
 # Cambios de botón de color (Pablo Chacón)
-![color_negro](image.png)
-![color_amarillo](image-1.png)
-![color_naranja](image-2.png)
+
 ![color_azul](imagen-3.png)
 
 # Funcionalidad Adicional: Ventana Iniciada
